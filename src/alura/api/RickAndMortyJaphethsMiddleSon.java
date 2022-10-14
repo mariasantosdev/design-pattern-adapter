@@ -1,11 +1,9 @@
 package alura.api;
 
-import java.net.URISyntaxException;
-
 public class RickAndMortyJaphethsMiddleSon implements HttpAdapter {
 
     @Override
-    public void get() throws URISyntaxException {
-        new ClientApiAdapter(this).makeRequest("https://rickandmortyapi.com/api/character/676");
+    public void makeRequest() {
+        new ClientApiAdapter(this).makeAGetRequest("https://rickandmortyapi.com/api/character/676");
     }
 }
